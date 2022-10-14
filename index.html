@@ -25,48 +25,55 @@
 
     <nav id="my_nav" class="navbar navbar-expand-lg bg-light py-3">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Creación de Formularios
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./index.html#form">Form</a></li>
-                  <li><a class="dropdown-item" href="./index.html#fieldset_legend">Fieldset y Legend</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Creación de Formularios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html#form">Form</a></li>
+                            <li><a class="dropdown-item" href="./index.html#fieldset_legend">Fieldset y Legend</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Entradas de Datos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./entrada_datos.html#label_input">Label e Input</a></li>
+                            <li><a class="dropdown-item" href="./entrada_datos.html#textarea">Textarea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Listas desplegables
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./listas_desplegables.html#select_datalist">Select y
+                                    Datalist</a></li>
+                            <li><a class="dropdown-item" href="./listas_desplegables.html#option_optgroup">Option y
+                                    Optgroup</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="./botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" href="./output.html">Output</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Entradas de Datos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./entrada_datos.html#label_input">Label e Input</a></li>
-                  <li><a class="dropdown-item" href="./entrada_datos.html#textarea">Textarea</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Listas desplegables
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./listas_desplegables.html#select_datalist">Select y Datalist</a></li>
-                  <li><a class="dropdown-item" href="./listas_desplegables.html#option_optgroup">Option y Optgroup</a></li>
-                </ul>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link active" aria-current="page" href="./botones.html">Botones</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link active" href="./output.html">Output</a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <main>
         <section class="info">
@@ -133,29 +140,29 @@
         </section>
     </main>
 
-    <form action="" class="ejemplo">
-        <fieldset>
-            <legend>Nombre y Apellidos</legend>
-            <label for="nombre">
-                <span>Nombre: </span>
-                <input type="text" name="nombre" id="nombre">
-            </label>
-            <label for="apellidos">
-                <span>Apellidos: </span>
-                <input type="text" name="apellidos" id="apellidos">
-            </label>
+    <form id="ejemplo" class="d-flex justify-content-evenly w-75 my-5"> 
+        <fieldset class="container w-25 px-5 border border-dark rounded-4">
+            <legend class="text-center p-2">Nombre y Apellidos</legend>
+            <div class="mb-3 row">
+                <label for="exampleInputName" class="form-label col">Nombre</label>
+                <input type="text" class="form-control col" id="exampleInputName">
+            </div>
+            <div class="mb-3 row">
+                <label for="exampleInputSurname" class="form-label col">Apellidos</label>
+                <input type="text" class="form-control col" id="exampleInputSurname">
+            </div>
         </fieldset>
 
-        <fieldset>
-            <legend>Dirección</legend>
-            <label for="direcion">
-                <span>Dirección: </span>
-                <input type="text" name="direccion" id="direcion">
-            </label>
-            <label for="cp">
-                <span>Código Postal: </span>
-                <input type="text" name="cp" id="cp">
-            </label>
+        <fieldset class="container w-25 px-5 border border-dark rounded-4">
+            <legend class="text-center p-2">Dirección</legend>
+            <div class="mb-3 row">
+                <label for="exampleInputDirection" class="form-label col">Dirección</label>
+                <input type="text" class="form-control col" id="exampleInputDirection">
+            </div>
+            <div class="mb-3 row">
+                <label for="exampleInputCP" class="form-label col">Código Postal</label>
+                <input type="text" class="form-control col" id="exampleInputCP">
+            </div>
         </fieldset>
     </form>
 

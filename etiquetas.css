@@ -76,6 +76,10 @@ main{
     justify-content: center;
 }
 
+ #ejemplo fieldset{
+    background-color: var(--color_amarillo_claro) !important;
+ }
+
 .info{
     width: 80%;
 }

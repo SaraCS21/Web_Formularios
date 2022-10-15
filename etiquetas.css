@@ -239,8 +239,8 @@ textarea{
 } */
 
 /* .ejemplo_input input[type=submit]:active, */
-.ejemplo button:active,
-.ejemplo input[type=submit]:active,
+button:active,
+input[type=submit]:active,
 .output_ejemplo input[type=button]:active{
     box-shadow: 0 0.2rem #dfd9d9;
     transform: translateY(0.2rem);
@@ -256,7 +256,7 @@ textarea{
     background-color: var(--color_amarillo_claro);
 } */
 
-.ejemplo select,
+/* .ejemplo select,
 .ejemplo .datalist{
     /* padding: 1.5%;
     
@@ -264,21 +264,21 @@ textarea{
     border: none;
     border-radius: 10px;
     background-color: var(--color_amarillo_claro); */
-}
+/* }  */
 
-.ejemplo button,
-.ejemplo input[type=submit],
+button,
+input[type=submit],
 .output_ejemplo input[type=button]{
-    width: 15%;
+    /* width: 15%;
     height: 40px;
 
     border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.4rem var(--color_amarillo_claro);
+    border-radius: 1rem; */
+    box-shadow: 0 0.4rem var(--color_amarillo_claro) !important;
     cursor: pointer;
 
-    background: var(--color_verde);
-    color: white;
+    background: var(--color_verde) !important;
+    color: white !important;
 }
 
 .output_ejemplo{

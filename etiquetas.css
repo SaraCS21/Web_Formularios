@@ -68,9 +68,13 @@ main{
     justify-content: center;
 }
 
- #ejemplo fieldset{
-    background-color: var(--color_amarillo_claro) !important;
- }
+#ejemplo fieldset{
+background-color: var(--color_amarillo_claro) !important;
+}
+
+.color_input, .color_input:valid {
+    background-color: var(--color_amarillo_claro);
+}
 
 .info{
     width: 80%;
@@ -137,7 +141,13 @@ main{
     font-weight: bold;
 }
 
-.ejemplo, .ejemplo_input{
+textarea{
+    height: 200px;
+    resize: none;
+    background-color: var(--color_amarillo_claro) !important;
+}
+
+/* .ejemplo{
     padding: 3%;
     width: 60%;
 
@@ -178,9 +188,9 @@ main{
     padding: 2%;
     width: 40%;
     height: 26px;
-}
+} */
 
-.ejemplo_input{
+/* .ejemplo_input{
     width: 60%;
     flex-wrap: wrap;
 }
@@ -227,9 +237,9 @@ main{
 
     background: var(--color_verde);
     color: white;
-}
+} */
 
-.ejemplo_input input[type=submit]:active,
+/* .ejemplo_input input[type=submit]:active, */
 .ejemplo button:active,
 .ejemplo input[type=submit]:active,
 .output_ejemplo input[type=button]:active{
@@ -237,7 +247,7 @@ main{
     transform: translateY(0.2rem);
 }
 
-.ejemplo textarea{
+/* .ejemplo textarea{
     padding: 1.5%;
     resize: none;
 
@@ -245,16 +255,16 @@ main{
     border: none;
     border-radius: 20px;
     background-color: var(--color_amarillo_claro);
-}
+} */
 
 .ejemplo select,
 .ejemplo .datalist{
-    padding: 1.5%;
+    /* padding: 1.5%;
     
     outline: none;
     border: none;
     border-radius: 10px;
-    background-color: var(--color_amarillo_claro);
+    background-color: var(--color_amarillo_claro); */
 }
 
 .ejemplo button,

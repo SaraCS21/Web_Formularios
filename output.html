@@ -108,12 +108,12 @@
             </section>
     </main>
 
-    <form action="" class="output_ejemplo">
-        <section class="valor">
-            <p>Valor a: <input type="number" id="a" value="0" min="0" max="30"></p>
-            <p>Valor b: <input type="number" id="b" value="0" min="0" max="30"></p>
+    <form class="d-flex flex-column mb-3">
+        <section class="d-flex justify-content-center w-25">
+            <p class="text-center">Valor a <input class="form-control mt-2" type="number" id="a" value="0" min="0" max="30"></p>
+            <p class="text-center">Valor b <input class="form-control mt-2" type="number" id="b" value="0" min="0" max="30"></p>
         </section>
-        <p class="boton"><input id="boton_suma" type="button" value="Calcular"></p>
+        <p><input class="btn" id="boton_suma" type="button" value="Calcular"></p>
         <p>Resultado: <output id="suma" for="a b"></output></p>
     </form>
 

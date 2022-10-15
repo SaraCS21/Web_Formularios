@@ -68,12 +68,17 @@ main{
     justify-content: center;
 }
 
-#ejemplo fieldset{
+#ejemplo fieldset,
+.color_input, 
+.color_input:valid,
+select, .datalist{
 background-color: var(--color_amarillo_claro) !important;
 }
 
-.color_input, .color_input:valid {
-    background-color: var(--color_amarillo_claro);
+textarea{
+    height: 200px;
+    resize: none;
+    background-color: var(--color_amarillo_claro) !important;
 }
 
 .info{
@@ -139,12 +144,6 @@ background-color: var(--color_amarillo_claro) !important;
 
 .info .destacado{
     font-weight: bold;
-}
-
-textarea{
-    height: 200px;
-    resize: none;
-    background-color: var(--color_amarillo_claro) !important;
 }
 
 /* .ejemplo{
